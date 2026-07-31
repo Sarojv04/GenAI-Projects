@@ -3,7 +3,15 @@ from dotenv import load_dotenv
 import streamlit as st
 from langchain_core.prompts import PromptTemplate
 
-load_dotenv()
+#load_dotenv()
+
+import os
+
+HUGGINGFACEHUB_API_TOKEN = st.secrets.get(
+    "HUGGINGFACEHUB_API_TOKEN",
+    os.getenv("HUGGINGFACEHUB_API_TOKEN", "")
+)
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = HUGGINGFACEHUB_API_TOKEN
 
 # ─────────────────────────────
 # UI PART
