@@ -41,6 +41,14 @@ Dynamic prompt engineering is powerful. Same paper,
 completely different output just by changing the prompt 
 structure. That was the most interesting part of building this.
 
+------------------- Next APP--------------------------------
+
+## 🚀 Live App
+
+Try it here: [Prompt Engineering Summary Tool](https://genai-projects-ztbuvl7rugifkwg5nip4ya.streamlit.app/)
+
+Enter a prompt and get a quick AI-generated summary — powered by Hugging Face models via LangChain and deployed on Streamlit Community Cloud.
+
 Still learning — feedback is always welcome! 🙌
 structure. That was the most interesting part of building this.
 
