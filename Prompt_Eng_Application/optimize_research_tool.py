@@ -71,14 +71,23 @@ template = load_prompt('template.json')
 # ─────────────────────────────
 if st.button("✨ Summarize"):
     with st.spinner("Generating summary..."):
-        prompt = template.invoke({
+        # prompt = template.invoke({
+        #     'paper_input': paper_input,
+        #     'style_input': style_input,
+        #     'length_input': length_input,
+        #     'language_input': language_input,
+        #     'format_input': format_input
+        # })
+        # result = model.invoke(prompt)
+    # Langchain Ecosystem -> link template and model with chain 
+        chain = template | model 
+        result = chain.invoke({
             'paper_input': paper_input,
             'style_input': style_input,
             'length_input': length_input,
             'language_input': language_input,
             'format_input': format_input
-        })
-        result = model.invoke(prompt)
+         })
 
     st.divider()
     st.subheader("Result")
