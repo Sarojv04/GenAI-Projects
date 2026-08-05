@@ -1,0 +1,4 @@
+Human: When will I receive my amount?
+AI: The amount will return within two working days.
+Human: What is the amount?
+AI: The amount is $100.
